@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		03BAFD5524744F7D00F6AE5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD5424744F7D00F6AE5D /* AppDelegate.swift */; };
-		03BAFD5724744F7D00F6AE5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD5624744F7D00F6AE5D /* ViewController.swift */; };
 		03BAFD5A24744F7D00F6AE5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BAFD5824744F7D00F6AE5D /* Main.storyboard */; };
 		03BAFD5C24744F7E00F6AE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BAFD5B24744F7E00F6AE5D /* Assets.xcassets */; };
 		03BAFD5F24744F7E00F6AE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BAFD5D24744F7E00F6AE5D /* LaunchScreen.storyboard */; };
 		03BAFD6A24744F7E00F6AE5D /* EmployeeInventoryDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD6924744F7E00F6AE5D /* EmployeeInventoryDemoAppTests.swift */; };
 		03BAFD7524744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD7424744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests.swift */; };
+		03BAFD932474511D00F6AE5D /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD922474511D00F6AE5D /* EmployeeListViewController.swift */; };
+		03BAFD952474514600F6AE5D /* EmployeeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD942474514600F6AE5D /* EmployeeListModel.swift */; };
+		03BAFD972474515B00F6AE5D /* EmployeeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD962474515B00F6AE5D /* EmployeeListViewModel.swift */; };
+		03BAFD992474519600F6AE5D /* NewEmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD982474519600F6AE5D /* NewEmployeeModel.swift */; };
+		03BAFD9B247451CC00F6AE5D /* NewEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD9A247451CC00F6AE5D /* NewEmployeeViewController.swift */; };
+		03BAFD9D247451EC00F6AE5D /* NewEmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD9C247451EC00F6AE5D /* NewEmployeeViewModel.swift */; };
+		03BAFD9F2474522700F6AE5D /* EditEmployeeInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD9E2474522700F6AE5D /* EditEmployeeInfoModel.swift */; };
+		03BAFDA12474523D00F6AE5D /* EditEmployeeInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFDA02474523D00F6AE5D /* EditEmployeeInfoViewModel.swift */; };
+		03BAFDA32474525000F6AE5D /* EditEmployeeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFDA22474525000F6AE5D /* EditEmployeeInfoViewController.swift */; };
+		03BAFDA52474528C00F6AE5D /* ProjectListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFDA42474528C00F6AE5D /* ProjectListModel.swift */; };
+		03BAFDA7247452B100F6AE5D /* ProjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFDA6247452B100F6AE5D /* ProjectListViewModel.swift */; };
+		03BAFDA9247452C000F6AE5D /* ProjectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFDA8247452C000F6AE5D /* ProjectListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +47,6 @@
 /* Begin PBXFileReference section */
 		03BAFD5124744F7D00F6AE5D /* EmployeeInventoryDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeInventoryDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BAFD5424744F7D00F6AE5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03BAFD5624744F7D00F6AE5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03BAFD5924744F7D00F6AE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03BAFD5B24744F7E00F6AE5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03BAFD5E24744F7E00F6AE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,18 @@
 		03BAFD7024744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeeInventoryDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BAFD7424744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInventoryDemoAppUITests.swift; sourceTree = "<group>"; };
 		03BAFD7624744F7E00F6AE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BAFD922474511D00F6AE5D /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
+		03BAFD942474514600F6AE5D /* EmployeeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListModel.swift; sourceTree = "<group>"; };
+		03BAFD962474515B00F6AE5D /* EmployeeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewModel.swift; sourceTree = "<group>"; };
+		03BAFD982474519600F6AE5D /* NewEmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmployeeModel.swift; sourceTree = "<group>"; };
+		03BAFD9A247451CC00F6AE5D /* NewEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmployeeViewController.swift; sourceTree = "<group>"; };
+		03BAFD9C247451EC00F6AE5D /* NewEmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmployeeViewModel.swift; sourceTree = "<group>"; };
+		03BAFD9E2474522700F6AE5D /* EditEmployeeInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmployeeInfoModel.swift; sourceTree = "<group>"; };
+		03BAFDA02474523D00F6AE5D /* EditEmployeeInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmployeeInfoViewModel.swift; sourceTree = "<group>"; };
+		03BAFDA22474525000F6AE5D /* EditEmployeeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmployeeInfoViewController.swift; sourceTree = "<group>"; };
+		03BAFDA42474528C00F6AE5D /* ProjectListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListModel.swift; sourceTree = "<group>"; };
+		03BAFDA6247452B100F6AE5D /* ProjectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewModel.swift; sourceTree = "<group>"; };
+		03BAFDA8247452C000F6AE5D /* ProjectListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				03BAFD5424744F7D00F6AE5D /* AppDelegate.swift */,
-				03BAFD5624744F7D00F6AE5D /* ViewController.swift */,
+				03BAFD8224744FF200F6AE5D /* EmployeeList */,
+				03BAFD832474500600F6AE5D /* AddEmploee */,
+				03BAFD842474502400F6AE5D /* EditEmployee */,
+				03BAFD852474504600F6AE5D /* ProjectList */,
 				03BAFD5824744F7D00F6AE5D /* Main.storyboard */,
 				03BAFD5B24744F7E00F6AE5D /* Assets.xcassets */,
 				03BAFD5D24744F7E00F6AE5D /* LaunchScreen.storyboard */,
@@ -123,6 +148,142 @@
 				03BAFD7624744F7E00F6AE5D /* Info.plist */,
 			);
 			path = EmployeeInventoryDemoAppUITests;
+			sourceTree = "<group>";
+		};
+		03BAFD8224744FF200F6AE5D /* EmployeeList */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFD882474507100F6AE5D /* Model */,
+				03BAFD862474505E00F6AE5D /* View */,
+				03BAFD872474506700F6AE5D /* ViewModel */,
+			);
+			path = EmployeeList;
+			sourceTree = "<group>";
+		};
+		03BAFD832474500600F6AE5D /* AddEmploee */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFD8B247450A200F6AE5D /* Model */,
+				03BAFD8A2474509B00F6AE5D /* View */,
+				03BAFD892474509000F6AE5D /* ViewModel */,
+			);
+			path = AddEmploee;
+			sourceTree = "<group>";
+		};
+		03BAFD842474502400F6AE5D /* EditEmployee */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFD8E247450C000F6AE5D /* Model */,
+				03BAFD8D247450B900F6AE5D /* View */,
+				03BAFD8C247450B100F6AE5D /* ViewModel */,
+			);
+			path = EditEmployee;
+			sourceTree = "<group>";
+		};
+		03BAFD852474504600F6AE5D /* ProjectList */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFD91247450D700F6AE5D /* Model */,
+				03BAFD90247450D100F6AE5D /* View */,
+				03BAFD8F247450CA00F6AE5D /* ViewModel */,
+			);
+			path = ProjectList;
+			sourceTree = "<group>";
+		};
+		03BAFD862474505E00F6AE5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFD922474511D00F6AE5D /* EmployeeListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03BAFD872474506700F6AE5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFD962474515B00F6AE5D /* EmployeeListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03BAFD882474507100F6AE5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFD942474514600F6AE5D /* EmployeeListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03BAFD892474509000F6AE5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFD9C247451EC00F6AE5D /* NewEmployeeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03BAFD8A2474509B00F6AE5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFD9A247451CC00F6AE5D /* NewEmployeeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03BAFD8B247450A200F6AE5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFD982474519600F6AE5D /* NewEmployeeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03BAFD8C247450B100F6AE5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFDA02474523D00F6AE5D /* EditEmployeeInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03BAFD8D247450B900F6AE5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFDA22474525000F6AE5D /* EditEmployeeInfoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03BAFD8E247450C000F6AE5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFD9E2474522700F6AE5D /* EditEmployeeInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03BAFD8F247450CA00F6AE5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFDA6247452B100F6AE5D /* ProjectListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03BAFD90247450D100F6AE5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFDA8247452C000F6AE5D /* ProjectListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03BAFD91247450D700F6AE5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03BAFDA42474528C00F6AE5D /* ProjectListModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +417,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03BAFD5724744F7D00F6AE5D /* ViewController.swift in Sources */,
+				03BAFDA9247452C000F6AE5D /* ProjectListViewController.swift in Sources */,
+				03BAFD9B247451CC00F6AE5D /* NewEmployeeViewController.swift in Sources */,
+				03BAFD992474519600F6AE5D /* NewEmployeeModel.swift in Sources */,
+				03BAFDA7247452B100F6AE5D /* ProjectListViewModel.swift in Sources */,
+				03BAFD9D247451EC00F6AE5D /* NewEmployeeViewModel.swift in Sources */,
 				03BAFD5524744F7D00F6AE5D /* AppDelegate.swift in Sources */,
+				03BAFDA52474528C00F6AE5D /* ProjectListModel.swift in Sources */,
+				03BAFD932474511D00F6AE5D /* EmployeeListViewController.swift in Sources */,
+				03BAFDA12474523D00F6AE5D /* EditEmployeeInfoViewModel.swift in Sources */,
+				03BAFDA32474525000F6AE5D /* EditEmployeeInfoViewController.swift in Sources */,
+				03BAFD9F2474522700F6AE5D /* EditEmployeeInfoModel.swift in Sources */,
+				03BAFD972474515B00F6AE5D /* EmployeeListViewModel.swift in Sources */,
+				03BAFD952474514600F6AE5D /* EmployeeListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +590,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -434,6 +606,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EmployeeInventoryDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +624,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EmployeeInventoryDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

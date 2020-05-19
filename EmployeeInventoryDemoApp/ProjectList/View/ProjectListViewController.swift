@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ProjectListViewController.swift
 //  EmployeeInventoryDemoApp
 //
 //  Created by Sachin Randive on 19/05/20.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ProjectListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
-
 }
-
