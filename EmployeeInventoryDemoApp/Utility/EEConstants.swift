@@ -10,5 +10,4 @@ import Foundation
 
 struct EEConstants {
     static let cellIdentifier = "listTableCell"
-    
 }
