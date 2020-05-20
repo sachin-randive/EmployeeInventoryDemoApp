@@ -1,0 +1,6 @@
+framework module Pods_EmployeeInventoryDemoAppTests {
+  umbrella header "Pods-EmployeeInventoryDemoAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
