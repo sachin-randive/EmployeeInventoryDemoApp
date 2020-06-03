@@ -41,5 +41,29 @@ class DatabaseManager {
             database.delete(object)
         }
     }
+    func saveProjectListArray() {
+        let projectNames: [String] = ["ATT FirstNet", "Sawari Cab App", "Resource Management App", "ATT", "TMobile", " Bell Canada"]
+        var projectLists:[ProjectListModel] = []
+        for name in projectNames {
+            let projectListModel = ProjectListModel()
+            projectListModel.projectName = name
+            projectLists.append(projectListModel)
+            try! database.write {
+                
+                database.add(projectLists)
+            }
+            
+        }
+    }
+    func getProjectNameArray() ->Results<ProjectListModel> {
+    let results: Results<ProjectListModel> = database.objects(ProjectListModel.self)
+    return results
+    }
     
+    func addProject(object: ProjectListModel) {
+           try! database.write {
+               database.add(object)
+           }
+       }
+        
 }

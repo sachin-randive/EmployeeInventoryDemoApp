@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import RealmSwift
+
+class ProjectListModel: Object {
+  @objc dynamic var projectName = ""
+}

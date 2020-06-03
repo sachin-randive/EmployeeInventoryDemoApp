@@ -9,5 +9,6 @@
 import Foundation
 
 struct EEConstants {
-    static let cellIdentifier = "listTableCell"
+    static let EmployeeListcellIdentifier = "listTableCell"
+    static let projectListCellIdentifier = "projectListCellIdentifier"
 }

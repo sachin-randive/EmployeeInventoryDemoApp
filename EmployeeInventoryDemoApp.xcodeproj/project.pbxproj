@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0305D2ED24877244003B2400 /* commanTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0305D2EC24877244003B2400 /* commanTableCell.swift */; };
+		0305D2F82487C40E003B2400 /* YBTextPickerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0305D2EF2487C40E003B2400 /* YBTextPickerDataModel.swift */; };
+		0305D2F92487C40E003B2400 /* YBTextPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0305D2F12487C40E003B2400 /* YBTextPickerCell.xib */; };
+		0305D2FA2487C40E003B2400 /* YBTextPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0305D2F22487C40E003B2400 /* YBTextPickerCell.swift */; };
+		0305D2FB2487C40E003B2400 /* YBTextPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0305D2F32487C40E003B2400 /* YBTextPicker.swift */; };
+		0305D2FC2487C40E003B2400 /* YBTextPicker_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305D2F52487C40E003B2400 /* YBTextPicker_checked.png */; };
+		0305D2FD2487C40E003B2400 /* YBTextPicker_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305D2F62487C40E003B2400 /* YBTextPicker_unchecked.png */; };
+		0305D2FE2487C40E003B2400 /* YBTextPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0305D2F72487C40E003B2400 /* YBTextPicker.xib */; };
+		0305D30024881118003B2400 /* EEUIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0305D2FF24881118003B2400 /* EEUIColor+Extension.swift */; };
 		03BAFD5524744F7D00F6AE5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD5424744F7D00F6AE5D /* AppDelegate.swift */; };
 		03BAFD5A24744F7D00F6AE5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BAFD5824744F7D00F6AE5D /* Main.storyboard */; };
 		03BAFD5C24744F7E00F6AE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BAFD5B24744F7E00F6AE5D /* Assets.xcassets */; };
@@ -15,7 +24,7 @@
 		03BAFD7524744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD7424744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests.swift */; };
 		03BAFD932474511D00F6AE5D /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD922474511D00F6AE5D /* EmployeeListViewController.swift */; };
 		03BAFD952474514600F6AE5D /* EmployeeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD942474514600F6AE5D /* EmployeeListModel.swift */; };
-		03BAFD972474515B00F6AE5D /* EmployeeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD962474515B00F6AE5D /* EmployeeListViewModel.swift */; };
+		03BAFD972474515B00F6AE5D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD962474515B00F6AE5D /* DatabaseManager.swift */; };
 		03BAFD992474519600F6AE5D /* NewEmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD982474519600F6AE5D /* NewEmployeeModel.swift */; };
 		03BAFD9B247451CC00F6AE5D /* NewEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD9A247451CC00F6AE5D /* NewEmployeeViewController.swift */; };
 		03BAFD9D247451EC00F6AE5D /* NewEmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD9C247451EC00F6AE5D /* NewEmployeeViewModel.swift */; };
@@ -50,6 +59,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0305D2EC24877244003B2400 /* commanTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commanTableCell.swift; sourceTree = "<group>"; };
+		0305D2EF2487C40E003B2400 /* YBTextPickerDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBTextPickerDataModel.swift; sourceTree = "<group>"; };
+		0305D2F12487C40E003B2400 /* YBTextPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBTextPickerCell.xib; sourceTree = "<group>"; };
+		0305D2F22487C40E003B2400 /* YBTextPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBTextPickerCell.swift; sourceTree = "<group>"; };
+		0305D2F32487C40E003B2400 /* YBTextPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBTextPicker.swift; sourceTree = "<group>"; };
+		0305D2F52487C40E003B2400 /* YBTextPicker_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YBTextPicker_checked.png; sourceTree = "<group>"; };
+		0305D2F62487C40E003B2400 /* YBTextPicker_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YBTextPicker_unchecked.png; sourceTree = "<group>"; };
+		0305D2F72487C40E003B2400 /* YBTextPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBTextPicker.xib; sourceTree = "<group>"; };
+		0305D2FF24881118003B2400 /* EEUIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EEUIColor+Extension.swift"; sourceTree = "<group>"; };
 		03BAFD5124744F7D00F6AE5D /* EmployeeInventoryDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeInventoryDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BAFD5424744F7D00F6AE5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03BAFD5924744F7D00F6AE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,7 +82,7 @@
 		03BAFD7624744F7E00F6AE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03BAFD922474511D00F6AE5D /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
 		03BAFD942474514600F6AE5D /* EmployeeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListModel.swift; sourceTree = "<group>"; };
-		03BAFD962474515B00F6AE5D /* EmployeeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewModel.swift; sourceTree = "<group>"; };
+		03BAFD962474515B00F6AE5D /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		03BAFD982474519600F6AE5D /* NewEmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmployeeModel.swift; sourceTree = "<group>"; };
 		03BAFD9A247451CC00F6AE5D /* NewEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmployeeViewController.swift; sourceTree = "<group>"; };
 		03BAFD9C247451EC00F6AE5D /* NewEmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmployeeViewModel.swift; sourceTree = "<group>"; };
@@ -117,6 +135,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0305D2EE2487C40E003B2400 /* EETextPicker */ = {
+			isa = PBXGroup;
+			children = (
+				0305D2EF2487C40E003B2400 /* YBTextPickerDataModel.swift */,
+				0305D2F02487C40E003B2400 /* EETextPickerCell */,
+				0305D2F32487C40E003B2400 /* YBTextPicker.swift */,
+				0305D2F42487C40E003B2400 /* Assets */,
+				0305D2F72487C40E003B2400 /* YBTextPicker.xib */,
+			);
+			path = EETextPicker;
+			sourceTree = "<group>";
+		};
+		0305D2F02487C40E003B2400 /* EETextPickerCell */ = {
+			isa = PBXGroup;
+			children = (
+				0305D2F12487C40E003B2400 /* YBTextPickerCell.xib */,
+				0305D2F22487C40E003B2400 /* YBTextPickerCell.swift */,
+			);
+			path = EETextPickerCell;
+			sourceTree = "<group>";
+		};
+		0305D2F42487C40E003B2400 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0305D2F52487C40E003B2400 /* YBTextPicker_checked.png */,
+				0305D2F62487C40E003B2400 /* YBTextPicker_unchecked.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		03BAFD4824744F7D00F6AE5D = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +227,7 @@
 			children = (
 				03BAFD882474507100F6AE5D /* Model */,
 				03BAFD862474505E00F6AE5D /* View */,
-				03BAFD872474506700F6AE5D /* ViewModel */,
+				03BAFD872474506700F6AE5D /* Services */,
 			);
 			path = EmployeeList;
 			sourceTree = "<group>";
@@ -223,12 +271,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		03BAFD872474506700F6AE5D /* ViewModel */ = {
+		03BAFD872474506700F6AE5D /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				03BAFD962474515B00F6AE5D /* EmployeeListViewModel.swift */,
+				03BAFD962474515B00F6AE5D /* DatabaseManager.swift */,
 			);
-			path = ViewModel;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		03BAFD882474507100F6AE5D /* Model */ = {
@@ -251,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				03BAFD9A247451CC00F6AE5D /* NewEmployeeViewController.swift */,
+				0305D2EC24877244003B2400 /* commanTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +364,8 @@
 			isa = PBXGroup;
 			children = (
 				03C262C324754D3600242E15 /* EEConstants.swift */,
+				0305D2FF24881118003B2400 /* EEUIColor+Extension.swift */,
+				0305D2EE2487C40E003B2400 /* EETextPicker */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -453,9 +504,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0305D2FD2487C40E003B2400 /* YBTextPicker_unchecked.png in Resources */,
 				03BAFD5F24744F7E00F6AE5D /* LaunchScreen.storyboard in Resources */,
 				03BAFD5C24744F7E00F6AE5D /* Assets.xcassets in Resources */,
 				03BAFD5A24744F7D00F6AE5D /* Main.storyboard in Resources */,
+				0305D2F92487C40E003B2400 /* YBTextPickerCell.xib in Resources */,
+				0305D2FC2487C40E003B2400 /* YBTextPicker_checked.png in Resources */,
+				0305D2FE2487C40E003B2400 /* YBTextPicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +641,11 @@
 				03BAFDA9247452C000F6AE5D /* ProjectListViewController.swift in Sources */,
 				03BAFD9B247451CC00F6AE5D /* NewEmployeeViewController.swift in Sources */,
 				03C262C424754D3600242E15 /* EEConstants.swift in Sources */,
+				0305D2FB2487C40E003B2400 /* YBTextPicker.swift in Sources */,
+				0305D2FA2487C40E003B2400 /* YBTextPickerCell.swift in Sources */,
+				0305D2F82487C40E003B2400 /* YBTextPickerDataModel.swift in Sources */,
+				0305D2ED24877244003B2400 /* commanTableCell.swift in Sources */,
+				0305D30024881118003B2400 /* EEUIColor+Extension.swift in Sources */,
 				03BAFD992474519600F6AE5D /* NewEmployeeModel.swift in Sources */,
 				03BAFDA7247452B100F6AE5D /* ProjectListViewModel.swift in Sources */,
 				03BAFD9D247451EC00F6AE5D /* NewEmployeeViewModel.swift in Sources */,
@@ -596,7 +656,7 @@
 				03BAFDA12474523D00F6AE5D /* EditEmployeeInfoViewModel.swift in Sources */,
 				03BAFDA32474525000F6AE5D /* EditEmployeeInfoViewController.swift in Sources */,
 				03BAFD9F2474522700F6AE5D /* EditEmployeeInfoModel.swift in Sources */,
-				03BAFD972474515B00F6AE5D /* EmployeeListViewModel.swift in Sources */,
+				03BAFD972474515B00F6AE5D /* DatabaseManager.swift in Sources */,
 				03BAFD952474514600F6AE5D /* EmployeeListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
