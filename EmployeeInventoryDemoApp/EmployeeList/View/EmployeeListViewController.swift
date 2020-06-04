@@ -14,19 +14,29 @@ class EmployeeListViewController: UIViewController {
     @IBOutlet weak var employeeListTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     let gradientLayer = CAGradientLayer()
+    fileprivate let employeeListViewModel = EmployeeListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if DatabaseManager.sharedInstance.getProjectNameArray().count < 1 {
-        DatabaseManager.sharedInstance.saveProjectListArray()
+            DatabaseManager.sharedInstance.saveProjectListArray()
         }
         self.setGradientBackground(gradientLayer:gradientLayer)
         let textFieldInsideSearchBar = searchBar.value(forKey: "searchField") as? UITextField
         textFieldInsideSearchBar?.backgroundColor = UIColor.darkGray
+        employeeListViewModel.delegate = self
+        employeeListViewModel.getEmployeeList()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        employeeListTableView.reloadData()
+        searchBar.text = ""
+        dismissKeyboard()
+    }
+    
+    func dismissKeyboard() {
+        DispatchQueue.main.async {
+            self.searchBar.resignFirstResponder()
+        }
     }
     
     //MARK:- Add New Employee Record
@@ -34,6 +44,7 @@ class EmployeeListViewController: UIViewController {
         let nav = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddNewEmployee") as! NewEmployeeViewController
         nav.hidesBottomBarWhenPushed = true
         nav.isEditDeatils = false
+        nav.addEmployeeDelegate = self
         self.navigationController?.pushViewController(nav, animated: true)
     }
 }
@@ -41,13 +52,13 @@ class EmployeeListViewController: UIViewController {
 extension EmployeeListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DatabaseManager.sharedInstance.getDataFromDB().count
+        return employeeListViewModel.filteredEmployeeList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell  = tableView.dequeueReusableCell(withIdentifier: EEConstants.EmployeeListcellIdentifier) as! EmployeeTableCell
-        let index = Int(indexPath.row)
-        let listOfEmployee = DatabaseManager.sharedInstance.getDataFromDB()[index] as EmployeeListModel
+        print(employeeListViewModel.filteredEmployeeList[indexPath.row])
+        let listOfEmployee = employeeListViewModel.filteredEmployeeList[indexPath.row] //DatabaseManager.sharedInstance.getDataFromDB()[index] as EmployeeListModel
         cell.labelEmployeeID.text = listOfEmployee.employeeID
         cell.labelName.text = listOfEmployee.employeeName + " (\(listOfEmployee.employeeBand))"
         cell.labelProject.text = "Project: " + listOfEmployee.employeeCurrentProject
@@ -70,23 +81,63 @@ extension EmployeeListViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nav = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddNewEmployee") as! NewEmployeeViewController
         nav.hidesBottomBarWhenPushed = true
-        nav.selectedEmployeeArray = DatabaseManager.sharedInstance.getDataFromDB()[indexPath.row]
+        nav.selectedEmployeeArray = employeeListViewModel.filteredEmployeeList[indexPath.row]
         nav.isEditDeatils = true
+        nav.addEmployeeDelegate = self
         self.navigationController?.pushViewController(nav, animated: true)
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let item = DatabaseManager.sharedInstance.getDataFromDB()[indexPath.row]
+            let item = employeeListViewModel.filteredEmployeeList[indexPath.row]
             var database:Realm
             database = try! Realm()
             try! database.write {
                 database.delete(item)
             }
-            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            employeeListViewModel.getEmployeeList()
             
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
 }
+
+//MARK: - UISearchBar Delegate
+extension EmployeeListViewController: UISearchBarDelegate {
+    
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
+        return true
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        dismissKeyboard()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        employeeListViewModel.searchEmployee(with: searchText) {
+            self.employeeListTableView.reloadData()
+            if searchText.isEmpty {
+                self.dismissKeyboard()
+            }
+        }
+    }
+}
+
+// MARK: - Delegate Methods of EmployeeListViewModelProtocal
+extension EmployeeListViewController: EmployeeListViewModelProtocal {
+    
+    func didUpdateEmployeeInfo() {
+        employeeListTableView.reloadData()
+    }
+}
+
+// MARK: - Delegate Methods of NewEmployeeViewControllerProtocal
+extension EmployeeListViewController: NewEmployeeViewControllerProtocal {
+    
+    func didGoBackAndReloadTableData() {
+        employeeListViewModel.getEmployeeList()
+    }
+}
+

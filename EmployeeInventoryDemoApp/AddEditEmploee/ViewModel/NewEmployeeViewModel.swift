@@ -52,5 +52,4 @@ class NewEmployeeViewModel: NSObject {
         })
         picker.show(withAnimation: .FromBottom)
     }
-    
 }

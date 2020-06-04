@@ -9,7 +9,8 @@
 import UIKit
 
 class EmployeeTableCell: UITableViewCell {
-   @IBOutlet weak var backGroundView: UIView!
+    
+    @IBOutlet weak var backGroundView: UIView!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var labelEmployeeID: UILabel!
     @IBOutlet weak var labelName: UILabel!
@@ -18,13 +19,13 @@ class EmployeeTableCell: UITableViewCell {
     @IBOutlet weak var labelProject: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-         backGroundView.layer.cornerRadius = 10
+        backGroundView.layer.cornerRadius = 10
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
 }
