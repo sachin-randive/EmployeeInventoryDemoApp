@@ -13,10 +13,12 @@ class ProjectListViewController: UIViewController {
     
     @IBOutlet weak var projectListTableView: UITableView!
     let gradientLayer = CAGradientLayer()
+    fileprivate let projectListViewModel = ProjectListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setGradientBackground(gradientLayer:gradientLayer)
+        projectListViewModel.getProjectList()
     }
     
     @IBAction func addNewProjectAction(_ sender: Any) {
@@ -28,6 +30,7 @@ class ProjectListViewController: UIViewController {
                 let projectListModel = ProjectListModel()
                 projectListModel.projectName = projectName.text!
                 DatabaseManager.sharedInstance.addProject(object: projectListModel)
+                self.projectListViewModel.getProjectList()
                 self.projectListTableView.reloadData()
             }
         }
@@ -48,8 +51,7 @@ extension ProjectListViewController: UITableViewDelegate, UITableViewDataSource 
             cell =  UITableViewCell(style:.default, reuseIdentifier: "CELL")
         }
         cell?.textLabel?.textColor = UIColor.white
-        let index = Int(indexPath.row)
-        let listOfEmployee = DatabaseManager.sharedInstance.getProjectNameArray()[index] as ProjectListModel
+        let listOfEmployee = projectListViewModel.projectList[indexPath.row]
         cell?.textLabel?.text = listOfEmployee.projectName
         cell?.selectionStyle = .none
         cell?.backgroundColor = .clear
@@ -63,7 +65,7 @@ extension ProjectListViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let item = DatabaseManager.sharedInstance.getProjectNameArray()[indexPath.row]
+            let item = projectListViewModel.projectList[indexPath.row]
             var database:Realm
             database = try! Realm()
             try! database.write {

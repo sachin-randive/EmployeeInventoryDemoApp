@@ -15,8 +15,8 @@ protocol EmployeeListViewModelProtocal {
 class EmployeeListViewModel: NSObject {
     
     var delegate: EmployeeListViewModelProtocal?
-    var employeeList : [EmployeeListModel]  = []
-    var filteredEmployeeList: [EmployeeListModel]  = []
+    var employeeList = [EmployeeListModel]()
+    var filteredEmployeeList = [EmployeeListModel]()
     
     //MARK:- Filter Logic on searchbar
     func searchEmployee(with searchText: String, completion: @escaping () -> Void) {

@@ -10,25 +10,51 @@ import XCTest
 @testable import EmployeeInventoryDemoApp
 
 class EmployeeInventoryDemoAppTests: XCTestCase {
-
+    
+    var projectListViewController: ProjectListViewController!
+    var employeeListViewModel = EmployeeListViewModel()
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        self.projectListViewController = storyboard.instantiateViewController(withIdentifier: "projectList") as? ProjectListViewController
+        self.projectListViewController.loadView()
+        self.projectListViewController.viewDidLoad()
     }
-
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testHasATableView() {
+        XCTAssertNotNil(projectListViewController.projectListTableView)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testTableViewHasDelegate() {
+        XCTAssertNotNil(projectListViewController.projectListTableView.delegate)
     }
-
+    
+    func testTableViewHasDataSource() {
+        XCTAssertNotNil(projectListViewController.projectListTableView.dataSource)
+    }
+    
+    func testViewModelInitialProperties() {
+        XCTAssertEqual(employeeListViewModel.employeeList, [])
+        XCTAssertEqual(employeeListViewModel.filteredEmployeeList, [])
+    }
+    
+    func testEmployeeViewModelCheckFilterdAndEmployeeArrayIsEqual() {
+        let filteredArray = employeeListViewModel.filteredEmployeeList.count
+        let employeeArray = employeeListViewModel.employeeList.count
+        XCTAssertEqual(employeeArray, filteredArray)
+    }
+    
+    func testEmployeeDataNotNil() {
+          employeeListViewModel.getEmployeeList()
+          let employee = employeeListViewModel.filteredEmployeeList[0]
+          XCTAssertNotNil(employee)
+          XCTAssertEqual(employee.employeeID, "0351")
+          XCTAssertEqual(employee.employeeBand, "U3")
+          XCTAssertEqual(employee.employeeCompetency, "UX")
+          XCTAssertEqual(employee.employeeCurrentProject, "Resource Management App")
+      }
 }

@@ -12,4 +12,5 @@ struct EEConstants {
     static let EmployeeListcellIdentifier = "listTableCell"
     static let projectListCellIdentifier = "projectListCellIdentifier"
     static let errorMessage = "All Fields are compulsory, Except employeeID"
+    static let tableEmployeeTableView = "table--employeeTableView"
 }

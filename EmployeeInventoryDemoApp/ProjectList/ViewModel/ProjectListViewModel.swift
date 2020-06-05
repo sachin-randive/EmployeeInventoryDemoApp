@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 
 class ProjectListViewModel {
-   
+    var projectList : [ProjectListModel]  = []
+    
+    func getProjectList() {
+        projectList = Array(DatabaseManager.sharedInstance.getProjectNameArray())
+    }
 }
 

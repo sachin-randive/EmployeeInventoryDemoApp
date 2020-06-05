@@ -15,7 +15,7 @@ class EmployeeListModel: Object {
     @objc dynamic var employeeName = ""
     @objc dynamic var employeeBand = ""
     @objc dynamic var employeeDesignation = ""
-    @objc dynamic var employeeCompetency = ""
+    @objc dynamic var employeeCompetency: String = ""
     @objc dynamic var employeeCurrentProject = ""
     
     override static func primaryKey() -> String? {

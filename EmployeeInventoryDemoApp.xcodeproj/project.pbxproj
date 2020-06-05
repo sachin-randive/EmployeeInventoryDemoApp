@@ -27,7 +27,6 @@
 		03BAFD932474511D00F6AE5D /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD922474511D00F6AE5D /* EmployeeListViewController.swift */; };
 		03BAFD952474514600F6AE5D /* EmployeeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD942474514600F6AE5D /* EmployeeListModel.swift */; };
 		03BAFD972474515B00F6AE5D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD962474515B00F6AE5D /* DatabaseManager.swift */; };
-		03BAFD992474519600F6AE5D /* NewEmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD982474519600F6AE5D /* NewEmployeeModel.swift */; };
 		03BAFD9B247451CC00F6AE5D /* NewEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD9A247451CC00F6AE5D /* NewEmployeeViewController.swift */; };
 		03BAFD9D247451EC00F6AE5D /* NewEmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD9C247451EC00F6AE5D /* NewEmployeeViewModel.swift */; };
 		03BAFDA52474528C00F6AE5D /* ProjectListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFDA42474528C00F6AE5D /* ProjectListModel.swift */; };
@@ -84,7 +83,6 @@
 		03BAFD922474511D00F6AE5D /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
 		03BAFD942474514600F6AE5D /* EmployeeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListModel.swift; sourceTree = "<group>"; };
 		03BAFD962474515B00F6AE5D /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
-		03BAFD982474519600F6AE5D /* NewEmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmployeeModel.swift; sourceTree = "<group>"; };
 		03BAFD9A247451CC00F6AE5D /* NewEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmployeeViewController.swift; sourceTree = "<group>"; };
 		03BAFD9C247451EC00F6AE5D /* NewEmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmployeeViewModel.swift; sourceTree = "<group>"; };
 		03BAFDA42474528C00F6AE5D /* ProjectListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListModel.swift; sourceTree = "<group>"; };
@@ -241,7 +239,6 @@
 		03BAFD832474500600F6AE5D /* AddEditEmploee */ = {
 			isa = PBXGroup;
 			children = (
-				03BAFD8B247450A200F6AE5D /* Model */,
 				03BAFD8A2474509B00F6AE5D /* View */,
 				03BAFD892474509000F6AE5D /* ViewModel */,
 			);
@@ -298,14 +295,6 @@
 				0305D2EC24877244003B2400 /* commanTableCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		03BAFD8B247450A200F6AE5D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				03BAFD982474519600F6AE5D /* NewEmployeeModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		03BAFD8F247450CA00F6AE5D /* ViewModel */ = {
@@ -619,7 +608,6 @@
 				0305D2F82487C40E003B2400 /* YBTextPickerDataModel.swift in Sources */,
 				0305D2ED24877244003B2400 /* commanTableCell.swift in Sources */,
 				0305D30024881118003B2400 /* EEUIColor+Extension.swift in Sources */,
-				03BAFD992474519600F6AE5D /* NewEmployeeModel.swift in Sources */,
 				03BAFDA7247452B100F6AE5D /* ProjectListViewModel.swift in Sources */,
 				03BAFD9D247451EC00F6AE5D /* NewEmployeeViewModel.swift in Sources */,
 				03BAFD5524744F7D00F6AE5D /* AppDelegate.swift in Sources */,

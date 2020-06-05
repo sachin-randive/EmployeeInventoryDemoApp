@@ -11,7 +11,7 @@
         <!--Project List-->
         <scene sceneID="qPV-Ss-RQE">
             <objects>
-                <viewController id="Mbi-BS-qTj" customClass="ProjectListViewController" customModule="EmployeeInventoryDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="projectList" id="Mbi-BS-qTj" customClass="ProjectListViewController" customModule="EmployeeInventoryDemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wSC-j8-Lck">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -26,6 +26,7 @@ class EmployeeListViewController: UIViewController {
         textFieldInsideSearchBar?.backgroundColor = UIColor.darkGray
         employeeListViewModel.delegate = self
         employeeListViewModel.getEmployeeList()
+        employeeListTableView.accessibilityIdentifier = EEConstants.tableEmployeeTableView
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -58,13 +59,20 @@ extension EmployeeListViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell  = tableView.dequeueReusableCell(withIdentifier: EEConstants.EmployeeListcellIdentifier) as! EmployeeTableCell
         print(employeeListViewModel.filteredEmployeeList[indexPath.row])
-        let listOfEmployee = employeeListViewModel.filteredEmployeeList[indexPath.row] //DatabaseManager.sharedInstance.getDataFromDB()[index] as EmployeeListModel
+        let listOfEmployee = employeeListViewModel.filteredEmployeeList[indexPath.row]
+        cell.accessibilityIdentifier = "myCell_\(indexPath.row)"
         cell.labelEmployeeID.text = listOfEmployee.employeeID
         cell.labelName.text = listOfEmployee.employeeName + " (\(listOfEmployee.employeeBand))"
         cell.labelProject.text = "Project: " + listOfEmployee.employeeCurrentProject
         cell.labelCompetency.text = "Competency: " + listOfEmployee.employeeCompetency
         cell.labelDesignation.text = listOfEmployee.employeeDesignation
-        cell.profileImage.image = UIImage(named: "\(listOfEmployee.employeeCompetency)")
+        if (UIImage(named:"\(listOfEmployee.employeeCompetency)") != nil) {
+            cell.profileImage.image = UIImage(named: "\(listOfEmployee.employeeCompetency)")
+        }
+        else {
+            cell.profileImage.image = UIImage(named: "default")
+        }
+        
         cell.selectionStyle = .none
         return cell
         
