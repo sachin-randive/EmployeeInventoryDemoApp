@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 class ProjectListViewController: UIViewController {
-    
+    //MARK: - Outlets
     @IBOutlet weak var projectListTableView: UITableView!
     let gradientLayer = CAGradientLayer()
     fileprivate let projectListViewModel = ProjectListViewModel()

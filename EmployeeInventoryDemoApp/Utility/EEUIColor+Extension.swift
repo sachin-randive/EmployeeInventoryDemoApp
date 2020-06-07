@@ -15,6 +15,7 @@ extension UIColor {
 }
 
 extension UIViewController {
+    
     func setGradientBackground(gradientLayer: CAGradientLayer) {
         gradientLayer.colors = [UIColor.colorTop, UIColor.colorBottom]
         gradientLayer.locations = [0.0, 1.0]
@@ -23,3 +24,10 @@ extension UIViewController {
     }
 }
 
+extension UITextField {
+    
+    func validatedText(validationType: ValidatorType) throws -> String {
+        let validator = VaildatorFactory.validatorFor(type: validationType)
+        return try validator.validated(self.text!)
+    }
+}

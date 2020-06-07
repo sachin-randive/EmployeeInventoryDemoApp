@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 class EmployeeListViewController: UIViewController {
-    
+    //MARK: - Outlets
     @IBOutlet weak var employeeListTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     let gradientLayer = CAGradientLayer()

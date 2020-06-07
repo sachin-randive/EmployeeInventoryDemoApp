@@ -9,6 +9,7 @@
 import UIKit
 
 class commanTableCell: UITableViewCell {
+    //MARK: - Outlets
     @IBOutlet weak var radioButtonImage: UIImageView!
     @IBOutlet weak var commanTextLabel: UILabel!
     

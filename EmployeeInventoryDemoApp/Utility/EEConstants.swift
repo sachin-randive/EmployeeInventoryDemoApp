@@ -11,6 +11,8 @@ import Foundation
 struct EEConstants {
     static let EmployeeListcellIdentifier = "listTableCell"
     static let projectListCellIdentifier = "projectListCellIdentifier"
-    static let errorMessage = "All Fields are compulsory, Except employeeID"
+    static let errorMessage = "All Fields are compulsory"
     static let tableEmployeeTableView = "table--employeeTableView"
+    static let success = "success"
+    static let sucessMessage = "Data Added Successfully!!!"
 }

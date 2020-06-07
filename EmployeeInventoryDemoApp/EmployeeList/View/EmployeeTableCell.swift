@@ -17,6 +17,7 @@ class EmployeeTableCell: UITableViewCell {
     @IBOutlet weak var labelDesignation: UILabel!
     @IBOutlet weak var labelCompetency: UILabel!
     @IBOutlet weak var labelProject: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         backGroundView.layer.cornerRadius = 10
