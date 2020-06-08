@@ -1,14 +1,14 @@
 //
-//  EmployeeInventoryDemoAppUITests.swift
+//  EmployeeListUITests.swift
 //  EmployeeInventoryDemoAppUITests
 //
-//  Created by Sachin Randive on 19/05/20.
+//  Created by Sachin Randive on 08/06/20.
 //  Copyright © 2020 Sachin Randive. All rights reserved.
 //
 
 import XCTest
 
-class EmployeeInventoryDemoAppUITests: XCTestCase {
+class EmployeeListUITests: XCTestCase {
     
     var app: XCUIApplication!
     
@@ -47,8 +47,12 @@ class EmployeeInventoryDemoAppUITests: XCTestCase {
     }
     
     func testDetailsListOfEmployee() {
-        app.searchFields["Search Employee"].tap()
-        app.tables["table--employeeTableView"].staticTexts["Competency: UX"].tap()
-        app.navigationBars["Employee Details"].buttons["Employee List"].tap()
+        let app = XCUIApplication()
+        let searchEmployeeSearchField = app.searchFields["Search Employee"]
+        searchEmployeeSearchField.tap()
+        searchEmployeeSearchField.typeText("As")
+        let clearTextButton = searchEmployeeSearchField.buttons["Clear text"]
+        clearTextButton.tap()
     }
+    
 }

@@ -13,6 +13,7 @@ struct EEConstants {
     static let projectListCellIdentifier = "projectListCellIdentifier"
     static let errorMessage = "All Fields are compulsory"
     static let tableEmployeeTableView = "table--employeeTableView"
+    static let currentProjectTableView = "table--currentProjectTableView"
     static let success = "success"
     static let sucessMessage = "Data Added Successfully!!!"
 }

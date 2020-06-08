@@ -21,11 +21,13 @@
 		03111D532488FBF200E75B77 /* EEToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03111D522488FBF200E75B77 /* EEToastMessage.swift */; };
 		033A41C6248D57A000726890 /* EmployeeListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033A41C5248D57A000726890 /* EmployeeListViewModelTests.swift */; };
 		033A41C8248D6B7700726890 /* ProjectListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033A41C7248D6B7700726890 /* ProjectListTests.swift */; };
+		033D956B248DFAF50079FDD6 /* EmployeeListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D956A248DFAF50079FDD6 /* EmployeeListUITests.swift */; };
+		033D956D248DFBCC0079FDD6 /* ProjectListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D956C248DFBCC0079FDD6 /* ProjectListUITests.swift */; };
+		033D9571248E38F70079FDD6 /* addEmployeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D9570248E38F70079FDD6 /* addEmployeeUITests.swift */; };
 		03BAFD5524744F7D00F6AE5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD5424744F7D00F6AE5D /* AppDelegate.swift */; };
 		03BAFD5A24744F7D00F6AE5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BAFD5824744F7D00F6AE5D /* Main.storyboard */; };
 		03BAFD5C24744F7E00F6AE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BAFD5B24744F7E00F6AE5D /* Assets.xcassets */; };
 		03BAFD5F24744F7E00F6AE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BAFD5D24744F7E00F6AE5D /* LaunchScreen.storyboard */; };
-		03BAFD7524744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD7424744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests.swift */; };
 		03BAFD932474511D00F6AE5D /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD922474511D00F6AE5D /* EmployeeListViewController.swift */; };
 		03BAFD952474514600F6AE5D /* EmployeeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD942474514600F6AE5D /* EmployeeListModel.swift */; };
 		03BAFD972474515B00F6AE5D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAFD962474515B00F6AE5D /* DatabaseManager.swift */; };
@@ -73,6 +75,9 @@
 		03111D522488FBF200E75B77 /* EEToastMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEToastMessage.swift; sourceTree = "<group>"; };
 		033A41C5248D57A000726890 /* EmployeeListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewModelTests.swift; sourceTree = "<group>"; };
 		033A41C7248D6B7700726890 /* ProjectListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListTests.swift; sourceTree = "<group>"; };
+		033D956A248DFAF50079FDD6 /* EmployeeListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListUITests.swift; sourceTree = "<group>"; };
+		033D956C248DFBCC0079FDD6 /* ProjectListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListUITests.swift; sourceTree = "<group>"; };
+		033D9570248E38F70079FDD6 /* addEmployeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEmployeeUITests.swift; sourceTree = "<group>"; };
 		03BAFD5124744F7D00F6AE5D /* EmployeeInventoryDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeInventoryDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BAFD5424744F7D00F6AE5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03BAFD5924744F7D00F6AE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,7 +87,6 @@
 		03BAFD6524744F7E00F6AE5D /* EmployeeInventoryDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeeInventoryDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BAFD6B24744F7E00F6AE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03BAFD7024744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeeInventoryDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		03BAFD7424744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInventoryDemoAppUITests.swift; sourceTree = "<group>"; };
 		03BAFD7624744F7E00F6AE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03BAFD922474511D00F6AE5D /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
 		03BAFD942474514600F6AE5D /* EmployeeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListModel.swift; sourceTree = "<group>"; };
@@ -225,7 +229,9 @@
 		03BAFD7324744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				03BAFD7424744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests.swift */,
+				033D956A248DFAF50079FDD6 /* EmployeeListUITests.swift */,
+				033D956C248DFBCC0079FDD6 /* ProjectListUITests.swift */,
+				033D9570248E38F70079FDD6 /* addEmployeeUITests.swift */,
 				03BAFD7624744F7E00F6AE5D /* Info.plist */,
 			);
 			path = EmployeeInventoryDemoAppUITests;
@@ -641,7 +647,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03BAFD7524744F7E00F6AE5D /* EmployeeInventoryDemoAppUITests.swift in Sources */,
+				033D9571248E38F70079FDD6 /* addEmployeeUITests.swift in Sources */,
+				033D956D248DFBCC0079FDD6 /* ProjectListUITests.swift in Sources */,
+				033D956B248DFAF50079FDD6 /* EmployeeListUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,12 +12,17 @@ import XCTest
 class ProjectListTests: XCTestCase {
     
     var projectListViewController: ProjectListViewController!
+    var projectListViewModel = ProjectListViewModel()
     
     override func setUp() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         self.projectListViewController = storyboard.instantiateViewController(withIdentifier: "projectList") as? ProjectListViewController
         self.projectListViewController.loadView()
         self.projectListViewController.viewDidLoad()
+        if DatabaseManager.sharedInstance.getProjectNameArray().count < 1 {
+            DatabaseManager.sharedInstance.saveProjectListArray()
+        }
+        projectListViewModel.getProjectList()
     }
     
     func testHasATableView() {
@@ -32,8 +37,20 @@ class ProjectListTests: XCTestCase {
         XCTAssertNotNil(projectListViewController.projectListTableView.dataSource)
     }
     
+    func testProjectListNotNil() {
+        let projectList = projectListViewModel.projectList[0]
+        XCTAssertNotNil(projectList)
+        XCTAssertEqual(projectList.projectName, "ATT FirstNet")
+    }
+    
+    func testCheckIfAllCurrentProjectNameNotNil() {
+        for projectName in projectListViewModel.projectList {
+            XCTAssertNotNil(projectName.projectName)
+        }
+    }
+    
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+      projectListViewModel.projectList = []
     }
     
 }

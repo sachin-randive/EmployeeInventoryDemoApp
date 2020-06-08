@@ -19,6 +19,7 @@ class ProjectListViewController: UIViewController {
         super.viewDidLoad()
         self.setGradientBackground(gradientLayer:gradientLayer)
         projectListViewModel.getProjectList()
+        projectListTableView.accessibilityIdentifier = EEConstants.currentProjectTableView
     }
     
     @IBAction func addNewProjectAction(_ sender: Any) {

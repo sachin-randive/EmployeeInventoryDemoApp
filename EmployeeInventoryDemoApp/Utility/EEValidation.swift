@@ -88,10 +88,10 @@ struct employeeNameValidator: ValidatorConvertible {
     
     func validated(_ value: String) throws -> String {
         guard value.count >= 3 else {
-            throw ValidationError("name must contain more than three characters" )
+            throw ValidationError("name must contain more than 3 characters" )
         }
-        guard value.count < 18 else {
-            throw ValidationError("name shoudn't conain more than 18 characters" )
+        guard value.count < 30 else {
+            throw ValidationError("name shoudn't conain more than 30 characters" )
         }
         
         do {
@@ -112,8 +112,8 @@ struct employeeDesignationValidator: ValidatorConvertible {
         guard value.count >= 4 else {
             throw ValidationError("Designation must contain more than 4 characters" )
         }
-        guard value.count < 20 else {
-            throw ValidationError("Designation shoudn't conain more than 20 characters" )
+        guard value.count < 30 else {
+            throw ValidationError("Designation shoudn't conain more than 30 characters" )
         }
         
         do {
